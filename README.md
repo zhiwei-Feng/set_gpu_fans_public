@@ -14,6 +14,13 @@ For installation and usage, read the comments in cool_gpu.
 - /usr/bin/nvidia-smi -> 为你自己机器上nvidia-smi的路径
 - /usr/bin/nvidia-settings -> 为你自己机器上nvidia-settings的路径
 
+### Get Started
+1. git clone https://github.com/zhiwei-Feng/set_gpu_fans_public.git
+2. cd set_gpu_fans_public
+3. sudo tcsh
+4. ./cool_gpu >& controller.log &
+5. tail -f controller.log
+
 ## temp of multi-gpu is individually obtained and adjusted 
 ```bash
   liuk@acgpu1 ~ $ nvidia-smi 
