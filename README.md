@@ -3,6 +3,17 @@ Controlling the fan speed of an NVIDIA GPU on a headless linux system requires s
 This can be used to gain a few percent additonal performance, at the cost of increased noise.
 For installation and usage, read the comments in cool_gpu.
 
+## 使用说明
+使用之前，需要对cool_gpu文件和nvscmd文件中的路径进行修改，需要修改的路径如下
+
+### cool_gpu
+- dir=/home/fzw/control_gpu_fans/set_gpu_fans_public -> 为你自己git下来的目录
+- /usr/bin/nvidia-smi -pm 1 -> 为你自己机器上nvidia-smi命令的路径
+
+### nvscmd
+- /usr/bin/nvidia-smi -> 为你自己机器上nvidia-smi的路径
+- /usr/bin/nvidia-settings -> 为你自己机器上nvidia-settings的路径
+
 ## temp of multi-gpu is individually obtained and adjusted 
 ```bash
   liuk@acgpu1 ~ $ nvidia-smi 
